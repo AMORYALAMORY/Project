@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سوق الحرفيين العالمي - تفاصيل المنتج</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-800">
+
+    <header class="bg-white shadow-md py-4 px-6 md:px-10 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-indigo-700">سوق الحرفيين</a>
+
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-700 hover:text-indigo-700 transition duration-300">الرئيسية</a>
+                <a href="products.html" class="text-gray-700 hover:text-indigo-700 transition duration-300">المنتجات</a>
+                <a href="categories.html" class="text-gray-700 hover:text-indigo-700 transition duration-300">الفئات</a>
+                <a href="about.html" class="text-gray-700 hover:text-indigo-700 transition duration-300">من نحن</a>
+                <a href="contact.html" class="text-gray-700 hover:text-indigo-700 transition duration-300">اتصل بنا</a>
+            </nav>
+
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+
+        <nav id="mobile-menu" class="md:hidden bg-white mt-4 rounded-lg shadow-lg hidden">
+            <a href="index.html" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition duration-300 rounded-lg">الرئيسية</a>
+            <a href="products.html" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition duration-300 rounded-lg">المنتجات</a>
+            <a href="categories.html" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition duration-300 rounded-lg">الفئات</a>
+            <a href="about.html" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition duration-300 rounded-lg">من نحن</a>
+            <a href="contact.html" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition duration-300 rounded-lg">اتصل بنا</a>
+        </nav>
+    </header>
+
+    <section class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-6" id="product-detail-container">
+            <div class="bg-white rounded-lg shadow-lg p-8 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                <div class="flex flex-col items-center">
+                    <img id="product-main-image" src="https://via.placeholder.com/600x400" alt="Product Image" class="w-full h-96 object-contain rounded-lg shadow-md mb-4">
+                    <div id="product-thumbnails" class="flex flex-wrap justify-center gap-2">
+                        </div>
+                </div>
+
+                <div class="text-center md:text-right">
+                    <h1 id="product-name" class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">اسم المنتج</h1>
+                    <p id="product-artisan" class="text-lg text-gray-600 mb-2">بواسطة: <a href="#" id="product-artisan-link" class="text-indigo-600 hover:underline">اسم الحرفي</a></p>
+                    <p id="product-price" class="text-indigo-700 font-extrabold text-3xl mb-6">SAR 0.00</p>
+                    <p id="product-description" class="text-gray-700 leading-relaxed mb-6">
+                        هنا سيكون الوصف التفصيلي للمنتج، يتحدث عن المواد المستخدمة، عملية الصنع، الأبعاد، وأي معلومات إضافية تجعل المنتج فريدًا وجذابًا للمشتري.
+                    </p>
+
+                    <button id="generate-description-button" class="w-full bg-purple-600 text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-purple-700 transition duration-300 transform hover:scale-105 mt-4 mb-4">
+                        توليد وصف إضافي للمنتج ✨
+                    </button>
+                    <div id="generated-description" class="bg-gray-100 p-4 rounded-lg text-gray-700 text-sm italic hidden">
+                        <p id="generated-description-text"></p>
+                        <div id="description-loading-indicator" class="hidden text-center mt-2">
+                            <div class="animate-spin rounded-full h-6 w-6 border-b-2 border-indigo-600 inline-block"></div>
+                            <p class="text-indigo-600">جاري التوليد...</p>
+                        </div>
+                    </div>
+                    <button class="w-full bg-indigo-600 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-105">أضف إلى السلة</button>
+                </div>
+            </div>
+
+            <div class="mt-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">منتجات ذات صلة</h2>
+                <div id="related-products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="products.html" class="inline-block text-indigo-600 hover:text-indigo-800 font-semibold transition duration-300">العودة إلى جميع المنتجات</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8 px-6 md:px-10">
+        <div class="container mx-auto text-center">
+            <p>© 2025 سوق الحرفيين العالمي. جميع الحقوق محفوظة.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">الخصوصية</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">الشروط والأحكام</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

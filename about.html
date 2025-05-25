@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سوق الحرفيين العالمي - من نحن</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-800">
+
+    <header class="bg-white shadow-md py-4 px-6 md:px-10 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-indigo-700">سوق الحرفيين</a>
+
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-700 hover:text-indigo-700 transition duration-300">الرئيسية</a>
+                <a href="products.html" class="text-gray-700 hover:text-indigo-700 transition duration-300">المنتجات</a>
+                <a href="categories.html" class="text-gray-700 hover:text-indigo-700 transition duration-300">الفئات</a>
+                <a href="about.html" class="text-indigo-700 font-semibold transition duration-300">من نحن</a>
+                <a href="contact.html" class="text-gray-700 hover:text-indigo-700 transition duration-300">اتصل بنا</a>
+            </nav>
+
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+
+        <nav id="mobile-menu" class="md:hidden bg-white mt-4 rounded-lg shadow-lg hidden">
+            <a href="index.html" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition duration-300 rounded-lg">الرئيسية</a>
+            <a href="products.html" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition duration-300 rounded-lg">المنتجات</a>
+            <a href="categories.html" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition duration-300 rounded-lg">الفئات</a>
+            <a href="about.html" class="block py-3 px-6 text-indigo-700 font-semibold hover:bg-gray-100 transition duration-300 rounded-lg">من نحن</a>
+            <a href="contact.html" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition duration-300 rounded-lg">اتصل بنا</a>
+        </nav>
+    </header>
+
+    <section class="relative bg-gradient-to-r from-purple-700 to-indigo-600 text-white py-20 md:py-32 overflow-hidden">
+        <div class="container mx-auto text-center px-6">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight animate-fade-in-up">قصتنا: دعم الحرفيين حول العالم</h1>
+            <p class="text-lg md:text-xl mb-10 opacity-90 animate-fade-in-up delay-200">نحن جسر يربط بين الإبداع والتقدير.</p>
+        </div>
+        <div class="absolute top-0 left-0 w-full h-full">
+            <div class="absolute w-64 h-64 bg-white opacity-10 rounded-full -top-16 -left-16 transform rotate-45"></div>
+            <div class="absolute w-48 h-48 bg-white opacity-10 rounded-full -bottom-16 -right-16 transform -rotate-30"></div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="text-center md:text-right">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">مهمتنا</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    توفير منصة عالمية للحرفيين الموهوبين لعرض أعمالهم الفريدة، وتمكينهم من الوصول إلى جمهور أوسع، وضمان استدامة الحرف اليدوية التقليدية عبر الأجيال.
+                </p>
+            </div>
+            <div class="text-center md:text-left">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">رؤيتنا</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    أن نصبح الوجهة الرائدة عالميًا لعشاق الحرف اليدوية، حيث يلتقي الإبداع بالجودة، وتزدهر المجتمعات الحرفية.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-gray-800">قيمنا الأساسية</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-4">الجودة والإتقان</h3>
+                    <p class="text-gray-700">نلتزم بتقديم منتجات يدوية ذات جودة عالية تعكس مهارة الحرفيين.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-4">الاستدامة والعدالة</h3>
+                    <p class="text-gray-700">ندعم الممارسات المستدامة ونضمن تعويضًا عادلًا للحرفيين.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-4">التنوع الثقافي</h3>
+                    <p class="text-gray-700">نحتفي بالتنوع الثقافي للحرف اليدوية من مختلف أنحاء العالم.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-gray-800">فريقنا</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="flex flex-col items-center">
+                    <img src="https://via.placeholder.com/200x200/E0F2F7/01579B?text=سارة" onerror="this.onerror=null;this.src='https://placehold.co/200x200/E0F2F7/01579B?text=فريق';" alt="[Image of Team Member]" class="w-40 h-40 rounded-full object-cover mb-4 shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800">سارة محمد</h3>
+                    <p class="text-indigo-600 mb-2">المؤسس والمدير التنفيذي</p>
+                    <p class="text-gray-600 text-sm">شغوفة بالحرف اليدوية وتطوير المجتمعات.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://via.placeholder.com/200x200/C5CAE9/3F51B5?text=علي" onerror="this.onerror=null;this.src='https://placehold.co/200x200/E0F2F7/01579B?text=فريق';" alt="[Image of Team Member]" class="w-40 h-40 rounded-full object-cover mb-4 shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800">علي حسن</h3>
+                    <p class="text-indigo-600 mb-2">مدير العمليات</p>
+                    <p class="text-gray-600 text-sm">خبرة في التجارة الإلكترونية ودعم الأعمال.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://via.placeholder.com/200x200/FFCDD2/D32F2F?text=فاطمة" onerror="this.onerror=null;this.src='https://placehold.co/200x200/E0F2F7/01579B?text=فريق';" alt="[Image of Team Member]" class="w-40 h-40 rounded-full object-cover mb-4 shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800">فاطمة الزهراء</h3>
+                    <p class="text-indigo-600 mb-2">مديرة التسويق</p>
+                    <p class="text-gray-600 text-sm">مبدعة في بناء العلامات التجارية وتعزيزها.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-indigo-600 text-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">انضم إلينا في رحلة دعم الحرفيين!</h2>
+            <p class="text-lg mb-8 opacity-90">سواء كنت حرفيًا تبحث عن منصة، أو محبًا للفن اليدوي، يسعدنا تواصلك.</p>
+            <a href="contact.html" class="bg-white text-indigo-700 hover:bg-indigo-100 px-8 py-4 rounded-full text-lg font-semibold shadow-lg transition duration-300 transform hover:scale-105">تواصل معنا الآن</a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8 px-6 md:px-10">
+        <div class="container mx-auto text-center">
+            <p>© 2025 سوق الحرفيين العالمي. جميع الحقوق محفوظة.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">الخصوصية</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">الشروط والأحكام</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
